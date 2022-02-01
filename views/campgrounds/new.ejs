@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Campground</title>
-</head>
-<body>
-   <form action="/campgrounds" method="POST">
-       <div>
-           <label for="title">Title</label>
-           <input id="title" type="text" name="campground[title]">
-       </div>
-       <div>
-           <label for="location">Location</label>
-           <input id="location" type="location" name="campground[location]">
-       </div>
-       <button>Add Campground</button>
-   </form>
-   <a href="/campgrounds">All Campgrounds</a>
-</body>
-</html>
+<% layout('layouts/boilerplate')%>
+<form action="/campgrounds" method="POST">
+    <div>
+        <label for="title">Title</label>
+        <input id="title" type="text" name="campground[title]">
+    </div>
+    <div>
+        <label for="location">Location</label>
+        <input id="location" type="location" name="campground[location]">
+    </div>
+    <button>Add Campground</button>
+</form>
+<a href="/campgrounds">All Campgrounds</a>
